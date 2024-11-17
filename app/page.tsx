@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { SetStateAction, useState } from 'react'
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
@@ -40,28 +40,40 @@ export default function Component() {
       return
     }
 
-    const shuffledRoles = [...roles].sort(() => Math.random() - 0.5)
-    const newResults = names.map((name, index) => ({
-      name,
-      role: shuffledRoles[index],
-      roleIcon: roleIcons[shuffledRoles[index]]
-    }))
+    const previousAssignments = new Map(results.map(result => [result.name, result.role]));
+  
+    let newResults: SetStateAction<{ name: string; role: string }[]> | { name: string; role: any; roleIcon: string }[] = [];
+  
+    let shuffledRoles: (string | number)[];
+    let validAssignment = false;
+    
+    // Can optimise to be O(N) if used set theory to assign roles. 
+    while (!validAssignment) {
+      shuffledRoles = [...roles].sort(() => Math.random() - 0.5);
+      newResults = names.map((name, index) => ({
+        name,
+        role: shuffledRoles[index],
+        roleIcon: roleIcons[shuffledRoles[index]]
+      }));
 
-    setResults(newResults)
+      validAssignment = !newResults.some(result => previousAssignments.get(result.name) === result.role);
+    }
+
+    setResults(newResults);
   }
-
+  
   return (
     
-    <div className="w-screen h-screen mx-auto p-6 space-y-6"
+    <div className="w-full min-h-screen mx-auto p-4 sm:p-6 md:p-8 space-y-4 sm:space-y-6"
       style={{ backgroundImage: 'url(/background.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}
      
       >
-        <div className = "flex items-center justify-center space-x-2">
-          <img src="/skt102.png" alt="SKT Logo" className="w-40 h-40" />
-          <h1 className = "bubbleTitle" >
-            SKT10 Role Assigner
-          </h1>
-        </div>
+        <div className="flex flex-col items-center justify-center space-y-4 sm:space-y-2 md:flex-row md:space-x-4">
+  <img src="/skt102.png" alt="SKT Logo" className="w-40 h-40" />
+  <h1 className="bubbleTitle text-6xl sm:text-7xl">
+    SKT10 Role Assigner
+  </h1>
+</div>
       
       <div className="max-w-4xl mx-auto space-y-6">
         <Card>

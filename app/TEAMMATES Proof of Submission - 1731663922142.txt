@@ -1,0 +1,15 @@
+TEAMMATES Proof of Submission
+1731663922142::20241115174514+0800
+==============================
+Submitted by: CS2103T-W08-4//SHAUN LEE TSE HSIEN [e1123109@u.nus.edu]
+Course: CS2103-Aug2024
+Session: Practical Exam
+
+
+
+1: For the product you testing in the PE, rate the quality of product design
+ag1zfnRlYW1tYXRlc3Y0ch0LEhBGZWVkYmFja1F1ZXN0aW9uGICAkPb9750JDA
+43fc57c7a57f0e8794cb6e858cbda8d4
+> %GENERAL%
+a,High,4,b,Low,2,c,Medium,3,d,High,4
+

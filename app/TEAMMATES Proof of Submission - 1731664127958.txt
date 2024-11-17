@@ -1,0 +1,15 @@
+TEAMMATES Proof of Submission
+1731664127958::20241115174895+0800
+==============================
+Submitted by: CS2103T-W08-4//SHAUN LEE TSE HSIEN [e1123109@u.nus.edu]
+Course: CS2103-Aug2024
+Session: Practical Exam
+
+
+
+2: Justify your answer to the previous question (i.e., quality of product design).
+ag1zfnRlYW1tYXRlc3Y0ch0LEhBGZWVkYmFja1F1ZXN0aW9uGICAkM7T5csKDA
+8a9051b4114d8abcf96f27b2f766276b
+> %GENERAL%
+Overall I think the quality of product design is quite low. Firstly, with target users being educational teachers in tetiary institutions like NUS, student IDs cannot even handle alphanumeric values thus all valid student IDs at NUS are unable to be inputted. Secondly, as a teacher I would have many students just CS1101S under Martin Henz has over 700 students. Individually having to type out their unique student ID to first assign them a module then grade them is extremely tedious and not worth while thus low value and non-optimised. However, all the features do tie in quite nicely with one another but they need to be added on and improved like having import feature or group features or ability to mass add to multiple students would be helpful. 
+

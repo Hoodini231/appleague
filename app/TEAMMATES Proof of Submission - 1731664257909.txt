@@ -1,0 +1,15 @@
+TEAMMATES Proof of Submission
+1731664257909::20241115175090+0800
+==============================
+Submitted by: CS2103T-W08-4//SHAUN LEE TSE HSIEN [e1123109@u.nus.edu]
+Course: CS2103-Aug2024
+Session: Practical Exam
+
+
+
+4: If you chose option 1 or 2 for the UG quality (i.e., the previous question), give your reasons.
+ag1zfnRlYW1tYXRlc3Y0ch0LEhBGZWVkYmFja1F1ZXN0aW9uGICAkM7TgdIKDA
+00345ae25d13cb6fca6b6a0d73fc24b4
+> %GENERAL%
+Could be improved by having more detailed explanations. See the Find command and the lack of communication in the UG on how find 'displays their details' meant rendering a unique profile page for them. Without screenshots or clearly formatted descriptions in other areas.
+
